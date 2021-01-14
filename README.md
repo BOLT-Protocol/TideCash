@@ -51,13 +51,43 @@ TideWallet、XPA、Crebit 等服務所有更新皆需經 TideBoardroom 進行投
 
 ## TideShare
 符合 ERC-777 規範的 Token 合約，總發行量為 750,000
+- authorizeOperator
+- revokeOperator
+- send
+- operatorSend
+- burn
+- operatorBurn
+- transfer
+- transferFrom
+- approve
+- allowance
 
 
 ## TideBond
 符合 ERC-777 規範的 Token 合約，總發行量為 750,000
+- authorizeOperator
+- revokeOperator
+- send
+- operatorSend
+- burn
+- operatorBurn
+- transfer
+- transferFrom
+- approve
+- allowance
 
 
 ## TideCash
 符合 ERC-777 規範的 Token 合約，無發行上限，操作受限於 TideStake、XPASwap 數值
+- authorizeOperator
+- revokeOperator
 - setUnit 指定 USD 參考價值 Token，可指定為 USX 或 USDT
 - swap 當 1 TIC > 1 USD 時存入 TIB 換取等量 TIC，當 1 TIC < 1 USD 時存入 TIC 換取等量 TIB
+- send
+- operatorSend
+- burn
+- operatorBurn
+- transfer
+- transferFrom
+- approve
+- allowance
