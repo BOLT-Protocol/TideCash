@@ -2,10 +2,13 @@
 Smart Contract for Stable Token
 
 ## 用戶操作流程
-- 存入 10,000 XPA 與 10,000 Crebit 至 TideStake
-- 30 日後取得 250 TIC 與 500 TIB
-- 存入 250 TIC 與 250 TIB 至 TideStake
-- 30 日後取得 
+1. 存入 10,000 XPA 與 10,000 Crebit 至 TideStake
+2. 30 日後取得 250 TIC 與 500 TIB
+3. 存入 250 TIS 與 250 TIB 至 TideStake
+4. 30 日後取得 25 TIC
+5. 5 日後 1 TIC = 0.9 USDT，以 100 TIB 換取 100 TIC
+6. 5 日後 1 TIC = 1.1 USDT，以 100 TIC 換取 100 TIB，同時因 TIC 溢價規則於 TideStake 取得 2.5 TIC
+
 
 ## XPASwap
 作為 TideCash 各機制匯率來源，參考 uniswap 機制，可自訂交易對與執行換匯功能
