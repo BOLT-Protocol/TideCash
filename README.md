@@ -1,6 +1,7 @@
 # TideCash
 Smart Contract for Stable Token
 
+
 ## 系統操作流程
 1. 存入 10,000 XPA 與 10,000 Crebit 至 TideStake
 2. 30 日後取得 250 TIC 與 500 TIB
@@ -22,6 +23,12 @@ Smart Contract for Stable Token
 - withdraw 銷毀持股並根據比例取出交易對資產
 
 
+# TideBank
+資產管理合約，支援鎖倉功能以及線性鎖倉功能
+- deposit 將資產存入指定地址，可設定是否需要鎖倉
+- withdraw 提領資產
+
+
 ## TideStake
 鎖倉功能合約，同時也是 TIS、TIB、TIC 管理合約，根據規範發行 TIS、TIB、TIC 並進行空投，每 30 日發行量縮減為 75%，當 TIC > 1.1 USD 時每 24 小時增發 10% TIC 並分配給 TIS 鎖倉戶
 - getBalance 取得指定幣種非鎖倉帳戶餘額
@@ -32,8 +39,11 @@ Smart Contract for Stable Token
 
 - deposit 指定專案進行定存
 - withdraw 提出合約內非鎖倉資產
-
 - depositTo 存入指定用戶，可設定鎖倉期或是線性解鎖
+
+- mint 增發 TIS 每 24 小時可執行一次
+- TIS2USDT 將 TIS 於 XPASwap 交換為 USDT
+- USDT2TIS 以 USDT 於 XPASwap 交換為 TIS
 
 - addCurrency 新增支援幣種
 - removeCurrency 移除支援幣種
@@ -70,7 +80,7 @@ TideWallet、XPA、Crebit 等服務所有更新皆需經 TideBoardroom 進行投
 
 
 ## TideBond
-符合 ERC-777 規範的 Token 合約，總發行量為 750,000
+符合 ERC-777 規範的 Token 合約，無發行上限，操作受限於 TideStake、XPASwap 數值
 - authorizeOperator
 - revokeOperator
 - send
@@ -88,7 +98,7 @@ TideWallet、XPA、Crebit 等服務所有更新皆需經 TideBoardroom 進行投
 - authorizeOperator
 - revokeOperator
 - setUnit 指定 USD 參考價值 Token，可指定為 USX 或 USDT
-- swap 當 1 TIC > 1 USD 時存入 TIB 換取等量 TIC，當 1 TIC < 1 USD 時存入 TIC 換取等量 TIB
+- swap 當 1 TIC > 1.05 USD 時銷毀 TIB 換取等量 TIC，當 1 TIC < 0.95 USD 時銷毀 TIC 換取等量 TIB
 - send
 - operatorSend
 - burn
@@ -97,8 +107,3 @@ TideWallet、XPA、Crebit 等服務所有更新皆需經 TideBoardroom 進行投
 - transferFrom
 - approve
 - allowance
-
-# TideBank
-資產管理合約，支援鎖倉功能以及線性鎖倉功能
-- deposit 將資產存入指定地址，可設定是否需要鎖倉
-- withdraw 提領資產
