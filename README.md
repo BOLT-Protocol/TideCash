@@ -29,8 +29,11 @@ Smart Contract for Stable Token
 - getTotalPlan 取得支援的幣種總數
 - getPlanAddress 根據幣種序號取得幣種地址
 - getPlanDetail 取得定存專案幣種、最低定存額度、最高定存額度、配息、鎖倉期等資訊
+
 - deposit 指定專案進行定存
 - withdraw 提出合約內非鎖倉資產
+
+- depositTo 
 
 - addCurrency 新增支援幣種
 - removeCurrency 移除支援幣種
