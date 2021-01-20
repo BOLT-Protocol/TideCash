@@ -1,7 +1,7 @@
 # TideCash
 Smart Contract for Stable Token
 
-## 用戶操作流程
+## 系統操作流程
 1. 存入 10,000 XPA 與 10,000 Crebit 至 TideStake
 2. 30 日後取得 250 TIC 與 500 TIB
 3. 存入 250 TIS 與 250 TIB 至 TideStake
@@ -33,7 +33,7 @@ Smart Contract for Stable Token
 - deposit 指定專案進行定存
 - withdraw 提出合約內非鎖倉資產
 
-- depositTo 
+- depositTo 存入指定用戶，可設定鎖倉期或是線性解鎖
 
 - addCurrency 新增支援幣種
 - removeCurrency 移除支援幣種
