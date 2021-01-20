@@ -94,3 +94,8 @@ TideWallet、XPA、Crebit 等服務所有更新皆需經 TideBoardroom 進行投
 - transferFrom
 - approve
 - allowance
+
+# TideBank
+資產管理合約，支援鎖倉功能以及線性鎖倉功能
+- deposit 將資產存入指定地址，可設定是否需要鎖倉
+- withdraw 提領資產
